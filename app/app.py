@@ -1,7 +1,7 @@
 from flask import Flask, Response
 
 app = Flask(__name__)
-is_healthy = True # Variavel de controle de saude (sem acento para evitar erro de encoding)
+is_healthy = True
 
 @app.route('/')
 def hello():
@@ -15,7 +15,7 @@ def health_check():
     else:
         return Response("FALHA CRITICA", status=500)
 
-# Rota do Caos: Onde voce vai "puxar a tomada" ao vivo
+# Rota do Caos
 @app.route('/crash')
 def crash():
     global is_healthy
