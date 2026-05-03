@@ -36,4 +36,4 @@ Imagem de base slim (Debian 13.4).
 
 Execução via usuário api-app (non-root).
 
-Varredura de vulnerabilidades CVE via Trivy integrada ao workflow.
+Varredura de vulnerabilidades CVE via Trivy
